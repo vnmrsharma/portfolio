@@ -1,0 +1,72 @@
+# Vinamra Sharma - Portfolio Website
+
+URL: https://vinamrasharma.com
+Author: Vinamra Sharma
+Last Modified: 2025-01-18
+
+## Description
+
+Personal portfolio website of Vinamra Sharma - PhD candidate in AI compilers at University of Glasgow, AI Engineer at Unineed Limited, and founder of mcurio.com and ClimateThread. Showcasing research, projects, achievements, and personal interests.
+
+## Keywords
+
+Vinamra Sharma, AI compilers, Edge AI, machine learning, PhD candidate, AI Engineer, University of Glasgow, hackathon winner, research publications, mcurio, ClimateThread, 65+ awards, 110+ hackathons, Best Paper Award, AI research, compiler optimization, adaptive optimization, edge devices, transfer learning, ethical AI, bias detection, human activity recognition, tiny machine learning, artificial intelligence, AI innovation, Glasgow UK, Dr José Cano Reyes, Unineed Limited, STMicroelectronics
+
+## Content
+
+Vinamra Sharma is a PhD candidate in the School of Computing Science at the University of Glasgow, researching AI compilers under the supervision of Dr José Cano Reyes. He works as an AI Engineer at Unineed Limited, building end-to-end GenAI solutions. He is the founder of mcurio.com (free decentralized AI-powered EdTech platform) and ClimateThread (sustainability platform).
+
+### Key Achievements
+- 65+ awards and prizes from hackathons worldwide
+- 110+ hackathons participated
+- 5 research publications including 3 Best Paper Awards
+- 550+ collaborators from 38+ countries
+
+### Research Focus
+- AI Compilers & Optimization: Transfer learning for adaptive compiler optimization
+- Edge AI & On-Device Learning: Efficient tiny machine learning solutions
+- Ethical AI & Bias Detection: Fairness in edge deployments
+
+### Recent Publications
+1. EdgeAI Models for Human Activity Recognition on Low-Power Devices (2025) - MobiUK 2025
+2. Biases in Edge Language Models: Detection, Analysis, and Mitigation (2025) - arXiv
+3. Efficient Tiny Machine Learning for Human Activity Recognition on Low-Power Edge Devices (2024) - Best Paper in Track Award, IEEE RTSI
+4. Phishing prevention techniques: past, present and future (2021) - Best Paper Award, Springer
+5. Institutional Recommendation and Ranking System Based on Integrated Datasets and Analysis (2020) - Best Paper Award, IEEE
+
+### Notable Projects
+- TerraVerde: Overall Winner at COP28, UNICEF Open Source Award - AI-powered renewable energy site recommendations
+- Mcurio: Free decentralized AI-powered EdTech platform
+- ClimateThread: Sustainability platform for climate actions
+- SustainEdge: GenAI Carbon Footprint Calculator - Best-of-the-Rest (x3)
+- EcoChum: AI-Powered Climate Mental Health Platform - Mystery Award (x2)
+
+### Education
+- PhD in Computing Science (2025-Present): University of Glasgow
+- MSc in Computing Science (2022-2023): University of Glasgow, Thesis Grade A3
+- B.Tech in Computer Science & Engineering (2018-2022): BTKIT, India, Top 1% of class
+
+### Skills
+Programming Languages: Python3, C++, C, JavaScript, Swift, OCaml
+Libraries: TensorFlow, PyTorch, NLTK, OpenCV, Pandas, NumPy
+Frameworks: React.js, FastAPI, LangChain, LLVM, MLIR, Flask
+LLM APIs/SDKs: OpenAI SDK, Llama 2.0 & 3.0, Gemini, Perplexity Sonar
+DevOps & Cloud: Git, Docker, AWS Lambda, Google Cloud Platform, Vercel
+
+## Related Links
+
+- [Home](https://vinamrasharma.com)
+- [About](https://vinamrasharma.com/about)
+- [Research](https://vinamrasharma.com/research)
+- [Projects](https://vinamrasharma.com/projects)
+- [Personal](https://vinamrasharma.com/personal)
+- [Contact](https://vinamrasharma.com/contact)
+- [Resume](https://vinamrasharma.com/resume)
+- [Google Scholar](https://scholar.google.com/citations?user=ivJzcpAAAAAJ)
+- [LinkedIn](https://www.linkedin.com/in/vinamra-sharma)
+- [GitHub](https://github.com/vnmrsharma)
+- [DevPost](https://devpost.com/vnmrsharma)
+- [Wiki Blog](https://wiki.vinamrasharma.com)
+- [mcurio.com](https://mcurio.com)
+- [ClimateThread](https://climatethread.com)
+
