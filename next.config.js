@@ -9,6 +9,8 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  // Standalone output for easier deployment
+  output: 'standalone',
 }
 
 module.exports = nextConfig
