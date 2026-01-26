@@ -116,7 +116,10 @@ export default function Home() {
     {
       date: "Jan '26",
       content: "Pushed the new website frontend live and made the source code fully open-source on GitHub.",
-      link: null,
+      link: {
+        text: "View on GitHub",
+        href: "https://github.com/vnmrsharma/portfolio",
+      },
     },
   ];
 

@@ -56,106 +56,8 @@ export default function Hero({
       aria-labelledby="hero-heading"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        {/* Text Content */}
-        <div className="space-y-4 sm:space-y-5 animate-fade-in">
-          {/* Name and Tagline */}
-          <div className="text-center lg:text-left">
-            <h1 id="hero-heading" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-3">
-              {name}
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mb-2">
-              {tagline}
-            </p>
-            <div className="flex items-center gap-2 text-sm sm:text-base text-gray-600 justify-center lg:justify-start">
-              <FaMapMarkerAlt className="text-primary" />
-              <span>{location}</span>
-            </div>
-          </div>
-
-          {/* Main Description */}
-          <div className="space-y-3 text-base sm:text-lg text-gray-700 leading-relaxed text-left">
-            <p className="text-balance">
-              {description}
-            </p>
-            <p className="text-balance">
-              {extendedBio}
-            </p>
-            <p className="text-balance">
-              <em>My interests lie in {researchInterests}</em>
-            </p>
-          </div>
-
-          {/* Beliefs & Values Section */}
-          {beliefs && beliefs.length > 0 && (
-            <div className="-mt-1 mb-0">
-              <div className="inline-block p-3 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-200 hover:border-primary hover:shadow-sm transition-all duration-300">
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  {beliefs[0]?.text}{" "}
-                  <Link
-                    href={beliefs[0]?.projectUrl || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-primary hover:underline inline-flex items-center gap-1"
-                  >
-                    {beliefs[0]?.projectName}
-                    <svg className="w-3 h-3 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </Link>
-                  . {beliefs[1]?.text}{" "}
-                  <Link
-                    href={beliefs[1]?.projectUrl || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-primary hover:underline inline-flex items-center gap-1"
-                  >
-                    {beliefs[1]?.projectName}
-                    <svg className="w-3 h-3 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </Link>
-                  .
-                </p>
-              </div>
-            </div>
-          )}
-
-          {/* Email */}
-          <div className="pt-1">
-            <p className="text-base text-gray-700 text-left">
-            I'm always open and excited to connect with like-minded people and collaborate on projects, hackathons, or research; feel free to reach out at {" "}
-              <Link
-                href={`mailto:${email}`}
-                className="text-primary hover:text-primary-dark font-medium"
-              >
-                {email}
-              </Link>
-              . I'd love to hear from you!
-            </p>
-          </div>
-          
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
-            {ctas.map((cta, index) => (
-              <Link
-                key={index}
-                href={cta.href}
-                download={cta.download}
-                className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
-                  cta.primary
-                    ? "bg-primary text-white hover:bg-primary-dark shadow-lg hover:shadow-xl"
-                    : "bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white"
-                }`}
-                aria-label={cta.text}
-              >
-                {cta.text}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Image with Pixel Transition and Social Icons */}
-        <div className="flex flex-col items-center justify-center h-full">
+        {/* Image with Pixel Transition and Social Icons - First on mobile, second on desktop */}
+        <div className="flex flex-col items-center justify-center h-full order-1 lg:order-2">
           <div className="w-[300px] sm:w-[350px] md:w-[400px] aspect-square mb-6">
             <PixelTransition
               firstContent={
@@ -218,6 +120,104 @@ export default function Hero({
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Text Content - Second on mobile, first on desktop */}
+        <div className="space-y-4 sm:space-y-5 animate-fade-in order-2 lg:order-1">
+          {/* Name and Tagline */}
+          <div className="text-center lg:text-left">
+            <h1 id="hero-heading" className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-3">
+              {name}
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mb-2 text-center lg:text-left">
+              {tagline}
+            </p>
+            <div className="flex items-center gap-2 text-sm sm:text-base text-gray-600 justify-center lg:justify-start">
+              <FaMapMarkerAlt className="text-primary" />
+              <span>{location}</span>
+            </div>
+          </div>
+
+          {/* Main Description */}
+          <div className="space-y-3 text-base sm:text-lg text-gray-700 leading-relaxed text-center lg:text-left">
+            <p className="text-balance">
+              {description}
+            </p>
+            <p className="text-balance">
+              {extendedBio}
+            </p>
+            <p className="text-balance">
+              <em>My interests lie in {researchInterests}</em>
+            </p>
+          </div>
+
+          {/* Beliefs & Values Section */}
+          {beliefs && beliefs.length > 0 && (
+            <div className="-mt-1 mb-0 flex justify-center lg:justify-start">
+              <div className="inline-block p-3 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-200 hover:border-primary hover:shadow-sm transition-all duration-300">
+                <p className="text-sm text-gray-700 leading-relaxed text-center lg:text-left">
+                  {beliefs[0]?.text}{" "}
+                  <Link
+                    href={beliefs[0]?.projectUrl || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    {beliefs[0]?.projectName}
+                    <svg className="w-3 h-3 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </Link>
+                  . {beliefs[1]?.text}{" "}
+                  <Link
+                    href={beliefs[1]?.projectUrl || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    {beliefs[1]?.projectName}
+                    <svg className="w-3 h-3 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Email */}
+          <div className="pt-1">
+            <p className="text-base text-gray-700 text-center lg:text-left">
+            I'm always open and excited to connect with like-minded people and collaborate on projects, hackathons, or research; feel free to reach out at {" "}
+              <Link
+                href={`mailto:${email}`}
+                className="text-primary hover:text-primary-dark font-medium"
+              >
+                {email}
+              </Link>
+              . I'd love to hear from you!
+            </p>
+          </div>
+          
+          {/* CTAs */}
+          <div className="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
+            {ctas.map((cta, index) => (
+              <Link
+                key={index}
+                href={cta.href}
+                download={cta.download}
+                className={`inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
+                  cta.primary
+                    ? "bg-primary text-white hover:bg-primary-dark shadow-lg hover:shadow-xl"
+                    : "bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white"
+                }`}
+                aria-label={cta.text}
+              >
+                {cta.text}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
