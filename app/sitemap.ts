@@ -15,9 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "weekly",
       priority: 1.0,
-      alternates: {
-        canonical: baseUrl,
-      },
     },
     // About Page - High Priority
     {
@@ -25,9 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "monthly",
       priority: 0.9,
-      alternates: {
-        canonical: `${baseUrl}/about`,
-      },
     },
     // Research Page - High Priority (frequently updated)
     {
@@ -35,9 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
-      alternates: {
-        canonical: `${baseUrl}/research`,
-      },
     },
     // Projects Page - High Priority (frequently updated)
     {
@@ -45,9 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
-      alternates: {
-        canonical: `${baseUrl}/projects`,
-      },
     },
     // Personal Page - Medium-High Priority
     {
@@ -55,9 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      alternates: {
-        canonical: `${baseUrl}/personal`,
-      },
     },
     // Contact Page - Medium Priority
     {
@@ -65,9 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "yearly",
       priority: 0.7,
-      alternates: {
-        canonical: `${baseUrl}/contact`,
-      },
     },
     // Resume/CV Page - Medium-High Priority
     {
@@ -75,9 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastModified,
       changeFrequency: "monthly",
       priority: 0.8,
-      alternates: {
-        canonical: `${baseUrl}/resume`,
-      },
     },
   ];
 }
