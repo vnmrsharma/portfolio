@@ -114,6 +114,15 @@ export default function Home() {
     link: { text: string; href: string } | null;
   }> = [
     {
+      date: "Mar '26",
+      content:
+        "Project \"TechEdge: A Platform for Teacher-Guided Distillation of On-Device Language Models\" has been shortlisted for the",
+      link: {
+        text: "IEEE IES Generative AI Challenge 2026 Hackathon",
+        href: "https://ai.ieee-ies.org/",
+      },
+    },
+    {
       date: "Jan '26",
       content: "Pushed the new website frontend live and made the source code fully open-source on GitHub.",
       link: {
@@ -426,7 +435,8 @@ export default function Home() {
                           <Link
                             href={item.link.href}
                             className="ml-2 text-primary hover:text-primary-dark font-medium underline inline-flex items-center gap-1"
-                            {...(item.link.href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             {item.link.text}
                           </Link>
