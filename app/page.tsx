@@ -116,6 +116,15 @@ export default function Home() {
     {
       date: "Mar '26",
       content:
+        "Workshop paper \"LLM-Driven Design Space Exploration of FPGA-based Accelerators\" has been accepted at EuroSys '26",
+      link: {
+        text: "InSyDe",
+        href: "https://sites.google.com/view/insyde-eurosys26",
+      },
+    },
+    {
+      date: "Mar '26",
+      content:
         "Project \"TechEdge: A Platform for Teacher-Guided Distillation of On-Device Language Models\" has been shortlisted for the",
       link: {
         text: "IEEE IES Generative AI Challenge 2026 Hackathon",
